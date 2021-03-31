@@ -1,7 +1,7 @@
 {
-	"name": "initial-commit",
-	"version": "0.1.2",
-	"description": "Starting template for repository",
+	"name": "node-jimp-watermark",
+	"version": "1.0.0",
+	"description": "Add watermark on images using NodeJS and Jimp",
 	"scripts": {
 		"test": "echo 'No tests found'",
 		"release-minor": "release-it minor --ci",
@@ -9,15 +9,27 @@
 		"release-major": "release-it major --ci",
 		"changelog-local": "npx auto-changelog"
 	},
-	"keywords": [],
+	"keywords": [
+		"watermater",
+		"jimp watermark",
+		"image watermark",
+		"image manipulation",
+		"image transformation",
+		"nodejs image watermark",
+		"nodejs image manipulation",
+		"nodejs image transformation"
+	],
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
-	"repository": "https://github.com/scriptex/initial-commit",
+	"repository": "https://github.com/scriptex/node-jimp-watermark",
 	"bugs": {
-		"url": "https://github.com/scriptex/initial-commit/issues",
+		"url": "https://github.com/scriptex/node-jimp-watermark/issues",
 		"email": "scriptex.bg@gmail.com"
 	},
 	"license": "MIT",
 	"dependencies": {
+		"dotenv": "8.2.0",
+		"glob": "7.1.6",
+		"jimp": "0.16.1",
 		"release-it": "14.5.0"
 	},
 	"devDependencies": {},
