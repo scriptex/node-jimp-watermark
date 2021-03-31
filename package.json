@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Add watermark on images using NodeJS and Jimp",
 	"scripts": {
+		"start": "node index.js",
 		"test": "echo 'No tests found'",
 		"release-minor": "release-it minor --ci",
 		"release-patch": "release-it patch --ci",
