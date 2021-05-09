@@ -28,7 +28,7 @@
 	},
 	"license": "MIT",
 	"dependencies": {
-		"dotenv": "9.0.0",
+		"dotenv": "9.0.1",
 		"glob": "7.1.7",
 		"jimp": "0.16.1",
 		"release-it": "14.6.1"
