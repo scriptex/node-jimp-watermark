@@ -29,7 +29,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"dotenv": "16.0.1",
-		"glob": "8.0.2",
+		"glob": "8.0.3",
 		"jimp": "0.16.1",
 		"release-it": "15.0.0"
 	},
