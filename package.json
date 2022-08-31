@@ -31,7 +31,7 @@
 		"dotenv": "16.0.2",
 		"glob": "8.0.3",
 		"jimp": "0.16.1",
-		"release-it": "15.4.0"
+		"release-it": "15.4.1"
 	},
 	"devDependencies": {},
 	"browserslist": [],
