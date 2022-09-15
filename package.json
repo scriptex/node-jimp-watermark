@@ -2,16 +2,8 @@
 	"name": "node-jimp-watermark",
 	"version": "1.0.0",
 	"description": "Add watermark on images using NodeJS and Jimp",
-	"scripts": {
-		"start": "node index.js",
-		"test": "echo 'No tests found'",
-		"release-minor": "release-it minor --ci",
-		"release-patch": "release-it patch --ci",
-		"release-major": "release-it major --ci",
-		"changelog-local": "npx auto-changelog"
-	},
 	"keywords": [
-		"watermater",
+		"watermark",
 		"jimp watermark",
 		"image watermark",
 		"image manipulation",
@@ -20,77 +12,27 @@
 		"nodejs image manipulation",
 		"nodejs image transformation"
 	],
-	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
-	"repository": "https://github.com/scriptex/node-jimp-watermark",
+	"homepage": "https://atanas.info/projects/node-jimp-watermark.html",
 	"bugs": {
 		"url": "https://github.com/scriptex/node-jimp-watermark/issues",
-		"email": "scriptex.bg@gmail.com"
+		"email": "hi@atanas.info"
 	},
 	"license": "MIT",
+	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
+	"funding": "https://github.com/sponsors/scriptex",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "github:scriptex/node-jimp-watermark"
+	},
 	"dependencies": {
 		"dotenv": "16.0.2",
 		"glob": "8.0.3",
-		"jimp": "0.16.1",
-		"release-it": "15.4.1"
+		"jimp": "0.16.1"
 	},
 	"devDependencies": {},
-	"browserslist": [],
-	"main": "index.js",
-	"private": true,
-	"release-it": {
-		"hooks": {
-			"after:release": "yarn changelog-local && git add CHANGELOG.md && git commit -m \"Update CHANGELOG.md with the latest changes\" && git push"
-		},
-		"git": {
-			"changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
-			"requireCleanWorkingDir": true,
-			"requireBranch": false,
-			"requireUpstream": false,
-			"requireCommits": false,
-			"addUntrackedFiles": false,
-			"commit": true,
-			"commitMessage": "Release ${version}",
-			"commitArgs": [],
-			"tag": true,
-			"tagName": null,
-			"tagAnnotation": "Release ${version}",
-			"tagArgs": [],
-			"push": true,
-			"pushArgs": [
-				"--follow-tags"
-			],
-			"pushRepo": ""
-		},
-		"npm": {
-			"publish": false,
-			"publishPath": ".",
-			"tag": null,
-			"otp": null,
-			"ignoreVersion": false,
-			"skipChecks": false,
-			"timeout": 10
-		},
-		"github": {
-			"release": false,
-			"releaseName": "Release ${version}",
-			"releaseNotes": null,
-			"preRelease": false,
-			"draft": false,
-			"tokenRef": "GITHUB_TOKEN",
-			"assets": null,
-			"host": null,
-			"timeout": 0,
-			"proxy": null,
-			"skipChecks": false
-		},
-		"gitlab": {
-			"release": false,
-			"releaseName": "Release ${version}",
-			"releaseNotes": null,
-			"tokenRef": "GITLAB_TOKEN",
-			"assets": null,
-			"origin": null,
-			"skipChecks": false
-		}
-	}
+	"private": true
 }

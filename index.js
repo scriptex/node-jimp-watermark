@@ -40,9 +40,9 @@ const useEnvNumber = (variable, defaultValue, min, max) => {
 	return num > max ? max : num < min ? min : num;
 };
 
-const ratio = useEnvNumber(WATERMARK_RESIZE_RATIO, 10, 0, 100);
-const spacing = useEnvNumber(WATERMARK_SPACING, 2, 0, 100);
-const opacity = useEnvNumber(WATERMARK_OPACITY, 0.9, 0, 1);
+const ratio = useEnvNumber(WATERMARK_RESIZE_RATIO || '10', 10, 0, 100);
+const spacing = useEnvNumber(WATERMARK_SPACING || '2', 2, 0, 100);
+const opacity = useEnvNumber(WATERMARK_OPACITY || '0.5', 0.9, 0, 1);
 const shouldDebug = WATERMARK_DEBUG === 'true';
 
 if (!WATERMARK_IMAGES) {
