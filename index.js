@@ -3,8 +3,8 @@
 const { resolve } = require('path');
 
 const jimp = require('jimp');
-const glob = require('glob');
 const dotnev = require('dotenv');
+const { glob } = require('glob');
 
 dotnev.config();
 

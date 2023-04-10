@@ -30,7 +30,7 @@
 	},
 	"dependencies": {
 		"dotenv": "16.0.3",
-		"glob": "9.3.5",
+		"glob": "10.0.0",
 		"jimp": "0.22.7"
 	},
 	"devDependencies": {},
