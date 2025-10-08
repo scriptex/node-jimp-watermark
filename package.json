@@ -29,7 +29,7 @@
 		"url": "github:scriptex/node-jimp-watermark"
 	},
 	"dependencies": {
-		"dotenv": "17.2.2",
+		"dotenv": "17.2.3",
 		"glob": "11.0.3",
 		"jimp": "1.6.0"
 	},
